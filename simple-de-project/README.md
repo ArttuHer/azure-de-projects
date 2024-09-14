@@ -37,4 +37,6 @@ The following services are used. As a note, one could done this project only wit
 - Azure Synapse Analytics
   - Analytical queries
 
-## 
+### Project architecture
+
+![Architecture Diagram](/Users/arttu.heroja/Documents/personal/projects/azure-de-projects/simple-de-project/docs/azure_de_project_architecture.jpg)
