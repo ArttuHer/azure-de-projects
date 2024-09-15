@@ -23,9 +23,10 @@ At the end of the project, data analysts should be able to answer the following 
 In the data, we have the following columns. Customer id is either SSN or business id, phone number is in any format and contract number is a number which was created when the account was opened. 
 ```json
 {
-  "customer_id": {},
-  "phone_number": {},
-  "contract_number": {}, 
+  "customer_id": "",
+  "phone_number": "",
+  "contract_number": "",
+  "languague": ""
 }
 ```
 
@@ -50,3 +51,7 @@ The following services are used. As a note, one could done this project only wit
 4. Make transformations with PySpark in Azure Databricks platform
 5. Store Silver data to Azure Data Lake
 6. Run analytical queries in Azure Synapse Analytics
+
+## Steps
+
+### Connection from Data Factory to GitHub
