@@ -11,10 +11,13 @@ Contoso Bank wants to analyse their customer data, which is stored in a JSON for
 3. Valid contract with Contoso (Has a contract number)
 4. Phone number with Finnish country code
 
+#### Relevant links
+- Kanban: https://miro.com/app/board/uXjVLejWrWU=/
+
 ### Project outcome
 At the end of the project, data analysts should be able to answer the following questions: 
-1. Do we have a list of phone numbers where send message in a case of service outgages? 
-2. How many phone numbers we are missing? 
+1. Do we have a list of phone numbers by preferred languague where send message in a case of service outgages? 
+2. How many customers are using Finnish, English or Swedish as their preferred languague?
 
 ### Data description
 In the data, we have the following columns. Customer id is either SSN or business id, phone number is in any format and contract number is a number which was created when the account was opened. 
@@ -27,7 +30,7 @@ In the data, we have the following columns. Customer id is either SSN or busines
 ```
 
 ### Azure services
-The following services are used. As a note, one could done this project only with, for example, Databricks, but for learning purposes different services are used: 
+The following services are used. As a note, one could done this project only with, e.g. Databricks and Data lake, but for learning purposes different services are used: 
 - Azure Data Factory
   - Data ingestion
 - Azure Data Lake Gen 2
@@ -39,4 +42,11 @@ The following services are used. As a note, one could done this project only wit
 
 ### Project architecture
 
-![Architecture Diagram](docs/azure_de_project_architecture.jpg)
+![Architecture Diagram](res/azure_de_project_architecture.jpg)
+
+1. Data is located in the project repository
+2. Ingest data with Azure Data Factory
+3. Store ingested Bronze data to Azure Data Lake
+4. Make transformations with PySpark in Azure Databricks platform
+5. Store Silver data to Azure Data Lake
+6. Run analytical queries in Azure Synapse Analytics
