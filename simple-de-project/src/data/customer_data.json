@@ -1,6 +1,36 @@
+[{
+  "customer_id": "010106A925U",
+  "phone_number": "+358503550617",
+  "contract_number": "26763",
+  "languague": "fi"
+},
+{
+  "customer_id": "010898-901E",
+  "phone_number": "050 354 0617",
+  "contract_number": "30602",
+  "languague": "se"
+},
+{
+  "customer_id": "150201A9750",
+  "phone_number": "+358 50 354 0117",
+  "contract_number": "12107",
+  "languague": "en"
+},
+{
+  "customer_id": "5080555-2",
+  "phone_number": "040 354 0127",
+  "contract_number": "12007",
+  "languague": "ru"
+},
 {
   "customer_id": "",
+  "phone_number": "040354 0127",
+  "contract_number": "12017",
+  "languague": "fi"
+},
+{
+  "customer_id": "200262-9494",
   "phone_number": "",
-  "contract_number": "",
-  "languague": ""
-}
+  "contract_number": "13007",
+  "languague": "se"
+}]
