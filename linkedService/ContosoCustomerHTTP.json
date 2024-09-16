@@ -1,0 +1,12 @@
+{
+	"name": "ContosoCustomerHTTP",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/ArttuHer/azure-de-projects/main/simple-de-project/src/data/customer_data.csv?token=GHSAT0AAAAAACWS3PMSR35XOQWG46HVLSAYZXH3TWA",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
