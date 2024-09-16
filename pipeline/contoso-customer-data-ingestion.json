@@ -1,0 +1,7 @@
+{
+	"name": "contoso-customer-data-ingestion",
+	"properties": {
+		"description": "Ingest customer data from GitHub",
+		"annotations": []
+	}
+}
