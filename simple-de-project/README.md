@@ -59,4 +59,5 @@ The following services are used. As a note, one could done this project only wit
 
 2. Create container for your data under storage account. Give it a name and create folders for Bronze and Silver data. The following naming convention was used: `<level>_<source_system>_<object>` like bronze_github_contoso_customer
 
-3. Create Azure Data factory. Give it a name, region and link it to resource group which was created previously. 
+3. Create Azure Data factory. Give it a name, region and link it to resource group which was created previously.
+4. Ingest data from the source. In this project we are using a simple pipeline with copy action. Define required parameters to ingest data via HTTP as csv-format and store it to Bronze data location.
