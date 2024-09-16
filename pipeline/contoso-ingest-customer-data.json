@@ -48,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "contoso_customer_data",
+						"referenceName": "contosocustomerdata",
 						"type": "DatasetReference"
 					}
 				],
