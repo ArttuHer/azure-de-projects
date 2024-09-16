@@ -1,0 +1,9 @@
+{
+	"name": "contoso-customer-df",
+	"location": "swedencentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3dcc6c91-c431-40ec-80ec-f4f29ec04b11",
+		"tenantId": "4e471800-b214-428e-893a-cf1b98f96007"
+	}
+}
