@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "contoso-customer-df"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://contosocustomerdata.dfs.core.windows.net/"
+		},
+		"ContosoCustomerHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/ArttuHer/azure-de-projects/main/simple-de-project/src/data/customer_data.csv"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/ArttuHer/azure-de-projects/main/simple-de-project/src/data/customer_data.json?token=GHSAT0AAAAAACWS3PMTYFAPAAG4EAQ5USAOZXH27HA"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "ArttuHer"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
