@@ -55,3 +55,6 @@ The following services are used. As a note, one could done this project only wit
 ## Steps
 
 ### Connection from Data Factory to GitHub
+First thing to do is to create a storage account. Azure storage account stores your data objects, such as BLOBs and files. More information can be found from MS documentation page https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal
+
+After creating a storage account, create resource group for your project. A resource group is a logical container of your resources. In other words, it will store all resources presented in the architecture diagram. 
