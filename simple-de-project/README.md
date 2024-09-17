@@ -69,3 +69,6 @@ Create Azure Data factory. Give it a name, region and link it to resource group 
 **Ingest Bronze data with Data factory to Data Lake**
 
 Ingest data from the source. In this project we are using a simple pipeline with copy action. Define required parameters to ingest data via HTTP as csv-format and store it to Bronze data location.
+
+**Create Azure Databricks service**
+Like in Data factory, find Azure Databricks service, link it to your project resource group, fill the other information if the needed and deploy it. After the deployment, launch the service and create compute cluster. More information about clusters here: https://learn.microsoft.com/en-us/azure/databricks/compute/configure
