@@ -12,7 +12,7 @@ Contoso Bank wants to analyse their customer data, which is stored in a JSON for
 4. Phone number with Finnish country code
 
 #### Relevant links
-- Kanban: https://miro.com/app/board/uXjVLejWrWU=/
+- Kanban: [link to Miro board](https://miro.com/app/board/uXjVLejWrWU=/)
 
 ### Project outcome
 At the end of the project, data analysts should be able to answer the following questions: 
@@ -56,7 +56,7 @@ The following services are used. As a note, one could done this project only wit
 
 **Create storage account**
 
-First thing to do is to create a storage account and link it to project specific resource group. Azure storage account stores your data objects, such as BLOBs and files, whereas resource group is a logical container for your resources. More information can be found from MS documentation page https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal and https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group
+First thing to do is to create a storage account and link it to project specific resource group. Azure storage account stores your data objects, such as BLOBs and files, whereas resource group is a logical container for your resources. More information can be found from MS documentation page [About storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) and [About resource groups](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
 
 **Create container for data**
 
@@ -71,7 +71,7 @@ Create Azure Data factory. Give it a name, region and link it to resource group 
 Ingest data from the source. In this project we are using a simple pipeline with copy action. Define required parameters to ingest data via HTTP as csv-format and store it to Bronze data location.
 
 **Create Azure Databricks service**
-Like in Data factory, find Azure Databricks service, link it to your project resource group, fill the other information if the needed and deploy it. After the deployment, launch the service and create compute cluster. More information about clusters here: https://learn.microsoft.com/en-us/azure/databricks/compute/configure
+Like in Data factory, find Azure Databricks service, link it to your project resource group, fill the other information if the needed and deploy it. After the deployment, launch the service and create compute cluster. More information about clusters here: [About cluster configurations](https://learn.microsoft.com/en-us/azure/databricks/compute/configure)
 
 
 **Mount Azure Data Lake storage to the Data factory**
