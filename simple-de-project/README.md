@@ -133,3 +133,5 @@ Use Azure Data Lake Storage Gen2 when you need:
 - Complex analytics and have large data sets in hand
 - Integration with big data tools like Apache Spark
 - A more granular access control and a hierarchical namespace for better data management
+
+### Azure Data Factory vs Azure Databricks
