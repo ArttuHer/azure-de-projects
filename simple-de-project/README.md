@@ -76,3 +76,6 @@ Like in Data factory, find Azure Databricks service, link it to your project res
 
 **Mount Azure Data Lake storage to the Data factory**
 In Azure portal, go to App registrations and select new registration. After registration, copy client and tenant IDs. Then, new client secret need to be created. 
+
+## Solution overview
+
