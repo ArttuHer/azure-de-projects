@@ -78,4 +78,58 @@ Like in Data factory, find Azure Databricks service, link it to your project res
 In Azure portal, go to App registrations and select new registration. After registration, copy client and tenant IDs. Then, new client secret need to be created. 
 
 ## Solution overview
+In this chapter, the selected services will be compared to similar products that Azure offers. 
+### Azure Data Lake Storage Gen2 vs Azure Blob Storage 
 
+#### Purpose and usage
+
+Blob Storage
+- Generated for storing large amounts of unstructured data, like audio and text files
+- Can be described as a general purpose object storage
+
+ADLS Gen2
+- ADLS Gen2 is designed for analytics and data processing
+- Easy integration with other analytics tools, like Azure Synapse Analytics and Azure Databricks
+
+#### Namespace structure 
+
+Blob Storage
+- Blob storage uses a flat namespace, instead of hierarchical namespace
+- Each blob is referenced by a unique URL
+
+ADLS Gen2
+- ADLS Gen2 uses hierarchical namespace (HNS), which creates a structure for handling data
+- HNS is similar than a folder structure in a traditional file system
+
+#### Access control
+
+Blob Storage
+- Access through storage account
+- Access control is usually less granular than in ADLS Gen2, due to flat namespace
+- Permissions at the container and account level
+
+ADLS Gen2
+- Access through storage account
+- Permission can be given at a folder level
+- Suitable for cases, where there is a large data team that need an access to different parts of the dataset
+
+#### Integration with Analytical Tools
+
+Blob Storage
+- Lack specific optimisation for analytics workloads
+- Less efficient when using distributed processing tools, without additional layers
+
+ADLS Gen2
+- Native integration with analytics tools
+- Good performance with batch processing, streaming data and complex data transformations
+
+#### When to Choose Each?
+
+Use Azure Blob Storage when you need: 
+- A simple and scalable storage for general purpose use (e.g., backups and file storage)
+- No requirements on complex analytics or file operations
+
+Use Azure Data Lake Storage Gen2 when you need: 
+- Complex analytics and have large data sets in hand
+- Integration with big data tools like Apache Spark
+- A more granular access control and a hierarchical namespace for better data management
