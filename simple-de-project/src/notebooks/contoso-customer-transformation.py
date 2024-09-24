@@ -1,7 +1,13 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC ## Optional mounting command
+
+# COMMAND ----------
+
 mounted = True
  
- # store these secrets under Azure key vault, for happy path, define them here. 
+# store these secrets under Azure key vault, for happy path, define them here. 
+# GitHub can't store ids
 if not mounted:
     configs = {"fs.azure.account.auth.type": "OAuth",
     "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
