@@ -123,7 +123,7 @@ ADLS Gen2
 - Native integration with analytics tools
 - Good performance with batch processing, streaming data and complex data transformations
 
-#### When to Choose Each?
+#### When to Use Which?
 
 Use Azure Blob Storage when you need: 
 - A simple and scalable storage for general purpose use (e.g., backups and file storage)
@@ -134,4 +134,55 @@ Use Azure Data Lake Storage Gen2 when you need:
 - Integration with big data tools like Apache Spark
 - A more granular access control and a hierarchical namespace for better data management
 
-### Azure Data Factory vs Azure Databricks
+### Azure Data Factory (ADF) vs Azure Databricks
+#### Purpose and usage
+ADF
+- Designed for moving data from one place to another and to orchestrate data movement and transformations
+- The basic-idea is low-code, as developers can map workflows easily with graphical user interface (drag-and-drop features)
+
+Databricks
+- A unified platform for ML, data science and data engineering with a focus on large-scale data processing
+- It is based on Apache Spark, which is a good tool for processing large-scale data
+
+#### Integration with Analytical Tools
+ADF
+- Supports many connectors, including Azure services, on-premises and other third-party systems
+
+Databricks
+- Offers Spark as a service, which reduces configuration work before processing the data
+- Can be linked to many cloud services
+- Integration focuses mainly on Azure Data Lake and Delta lake
+- Has less connector options
+
+#### Development and collaboration
+ADF
+- A visual interface for designing workflows and pipelines
+- Good for developers with minimal coding experience
+- Pipeline collaboration can be integrated with Git
+
+Databricks
+- Notebook-based development that support Python, R, SQL and Scala
+- Suitable for more complex use cases
+- Real-time collaboration is easy with Git integration
+
+#### Performance
+ADF
+- Scales automatically based on workload
+- Does not have a native compute engine and hence, it is uses e.g. Azure Synapse or Azure HDInsight for data transformation
+
+Databricks
+- Uses Azure's Databricks clusters, which can be configured to match your workload
+- Optimised for parallel processing of large datasets and real-time data processing
+
+#### When to Use Which?
+Use ADF when you need: 
+- Orchestrate and automate data movement
+- A simple developing workflow
+- Only ETL and minimal data analysis on the data
+
+Use Databricks when you need:
+- A unified platform for different data-roles
+- Complex data-transformations and analytics on large-scale data
+- Live streaming
+- The flexibility to fine-tune the code and optimise performance
+- Interactive collaboration with developers based on Git
