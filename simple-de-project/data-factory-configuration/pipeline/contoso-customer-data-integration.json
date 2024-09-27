@@ -1,5 +1,5 @@
 {
-	"name": "contoso-ingest-customer-data",
+	"name": "contoso-customer-data-integration",
 	"properties": {
 		"activities": [
 			{
