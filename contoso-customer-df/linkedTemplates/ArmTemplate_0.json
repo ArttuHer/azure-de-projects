@@ -212,7 +212,8 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2024-09-16T07:50:07Z"
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/contosocustomerdata')]",
