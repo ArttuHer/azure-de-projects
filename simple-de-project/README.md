@@ -73,9 +73,10 @@ Ingest data from the source. In this project we are using a simple pipeline with
 **Create Azure Databricks service**
 Like in Data factory, find Azure Databricks service, link it to your project resource group, fill the other information if the needed and deploy it. After the deployment, launch the service and create compute cluster. More information about clusters here: [About cluster configurations](https://learn.microsoft.com/en-us/azure/databricks/compute/configure)
 
-
 **Mount Azure Data Lake storage to the Data factory**
 In Azure portal, go to App registrations and select new registration. After registration, copy client and tenant IDs. Then, new client secret need to be created. 
+
+**Create Synapse Analytics service**
 
 ## Solution overview
 In this chapter, the selected services will be compared to similar products that Azure offers. 
