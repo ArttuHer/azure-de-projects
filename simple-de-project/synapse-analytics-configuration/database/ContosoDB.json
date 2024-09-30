@@ -1,0 +1,25 @@
+{
+	"name": "ContosoDB",
+	"properties": {
+		"Name": "ContosoDB",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://contoso-data@contosocustomerdata.dfs.core.windows.net/ContosoDB",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "contoso-analytics-sa-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "65d7d042-ce4a-4725-b275-de5149535da1"
+	},
+	"type": "DATABASE"
+}
