@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "SELECT * FROM silver_github_contoso_customer;\n\nSELECT languague, count(languague) as count from silver_github_contoso_customer GROUP BY languague",
+			"query": "SELECT * FROM silver_github_contoso_customer;\n\nSELECT languague, count(languague) AS count_of_languagues FROM silver_github_contoso_customer GROUP BY languague;",
 			"metadata": {
 				"language": "sql"
 			},
