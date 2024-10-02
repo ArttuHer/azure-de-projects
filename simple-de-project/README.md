@@ -13,8 +13,6 @@ Contoso Bank wants to analyse their customer data, which is stored in a JSON for
 
 #### Relevant links
 - Kanban: [link to Miro board](https://miro.com/app/board/uXjVLejWrWU=/)
-- Kanban: <a href="https://miro.com/app/board/uXjVLejWrWU=/" target="_blank">link to Miro Board</a>
-
 
 ### Project outcome
 At the end of the project, data analysts should be able to answer the following questions: 
