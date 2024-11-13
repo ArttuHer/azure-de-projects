@@ -24,4 +24,4 @@ az sql db create \
 --name fitnesslahtidb \
 --max-size 2GB
 
-
+az sql db list --resource-group mslearn-rg --server fitnesssqlserver-1998 --elastic-pool fitnesssqlpool --output table
