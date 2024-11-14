@@ -24,3 +24,25 @@ terraform plan
 
 terraform apply
   - this will deploy your resources to defined provider
+
+terraform state list
+  - this will show what resources we currently have
+
+terraform state show azurerm_resource_group.mtc-rg
+  - this will show information about the resource
+
+terraform plan -destroy 
+  - this will show what will be destroyed
+
+terraform apply -destroy
+  - this is the actual destroy command
+  - you can restore the previous state by using the backup file
+
+## Subnet address
+
+address_space = ["10.123.0.0/16"]
+
+  - This gives the IP address range for the network
+  - This is the starting point: 10.123.0.0
+  - /16 means prefix lenght, i.e. how many addresses there could be
+
