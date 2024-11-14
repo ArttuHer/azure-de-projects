@@ -28,3 +28,11 @@ resource "azurerm_virtual_network" "mtc-vm" {
     environment = "dev"
   }
 }
+
+resource "azurerm_subnet" "mtc-subnet" {
+  name = "mtc-subnet-1"
+  resource_group_name = azurerm_resource_group.mtc-rg.name
+  location = azurerm_resource_group.mtc-rg.location
+  virtual_network_name = azurerm_resource_group.mtc-vm.name
+  address_prefixes = ["10.0.1.0/24"]
+}
