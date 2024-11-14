@@ -10,26 +10,34 @@ end
 
 ######## Commands
 
-function tv
+function tfv
     terraform version
 end
 
-function tp
+function tfp
     terraform plan
 end
 
-function ta
+function tfay
     terraform apply -auto-approve
 end
 
-function tf
+function tff
     terraform fmt
 end
 
-function ts
+function tfs
     terraform show
 end
 
-function tss
+function tfssw
     terraform state show $argv
+end
+
+function tfpde
+    terraform plan --destroy
+end
+
+function tfade
+    terraform apply --destroy
 end
