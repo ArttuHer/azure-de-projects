@@ -3,3 +3,4 @@ simple-de-project/local_tmp
 terraform-azure-project/.terraform/
 terraform-azure-project/*.tfstate
 terraform-azure-project/crash.log
+terraform-azure-project/*.backup
