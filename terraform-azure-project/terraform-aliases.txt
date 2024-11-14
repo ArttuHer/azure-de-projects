@@ -1,0 +1,35 @@
+User aliases are defined here: ~/.user_aliases_fish
+Define that you use this alias: /Users/arttu.heroja/.config/fish
+
+This is how it is defined: 
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+    source ~/.user_aliases_fish
+end
+
+
+######## Commands
+
+function tv
+    terraform version
+end
+
+function tp
+    terraform plan
+end
+
+function ta
+    terraform apply -auto-approve
+end
+
+function tf
+    terraform fmt
+end
+
+function ts
+    terraform show
+end
+
+function tss
+    terraform state show $argv
+end
