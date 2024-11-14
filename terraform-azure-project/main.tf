@@ -30,8 +30,8 @@ resource "azurerm_virtual_network" "mtc-vm" {
 }
 
 resource "azurerm_subnet" "mtc-subnet" {
-  name                 = "mtc-subnet-1"
+  name                 = "mtc-subnet"
   resource_group_name  = azurerm_resource_group.mtc-rg.name
   virtual_network_name = azurerm_virtual_network.mtc-vm.name
-  address_prefixes     = ["10.0.1.0/24"]
+  address_prefixes     = ["10.123.1.0/24"]
 }
