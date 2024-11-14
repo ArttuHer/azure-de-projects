@@ -1,2 +1,3 @@
 .DS_Store
 simple-de-project/local_tmp
+terraform-azure-project/.terraform/
