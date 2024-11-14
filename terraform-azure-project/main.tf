@@ -8,6 +8,13 @@ terraform {
 }
 
 provider "azurerm" {
-  resource_provider_registrations = "none"
   features {}
+}
+
+resource "azurerm_resource_group" "mtc-rg" {
+  name     = "mtc-resources"
+  location = "Sweden Central"
+  tags = {
+    environment = "dev"
+  }
 }
