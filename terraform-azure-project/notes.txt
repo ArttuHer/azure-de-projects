@@ -51,4 +51,11 @@ address_space = ["10.123.0.0/16"]
   - Public IPs are for example added to VMs to make them accessible over the internet
   - As Public IPs are open for the internet, security groups should ne used and VPN for secure remote access
 
+## SSH
+  - Private key and public key
+  - ssh-keygen creates new key under ~/.ssh
+
+
+
 continue from 48:00 https://youtu.be/V53AHWun17s
+
