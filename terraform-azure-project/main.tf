@@ -45,6 +45,8 @@ resource "azurerm_network_security_group" "mtc-sg" {
   }
 }
 
+# Security rule will define what traffic it will allow
+# We would block some IP-addresses here, if we want to avoid connections from them
 resource "azurerm_network_security_rule" "mtc-dev-rule" {
   name                        = "mtc-dev-rule"
   priority                    = 100
