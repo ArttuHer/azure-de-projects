@@ -1,0 +1,26 @@
+## How to start a terraform project?
+
+1. create main.tf file
+  - This is the file, where you for example define resource groups and which provider you are using
+  - In this case, we use azurerm to make a connection between terraform and azure API
+2. login to your Azure account
+  - This was done, for example, with Azure CLI
+3. Add information to your main.tf file 
+  - Azure provider link: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+
+## Useful commands
+
+terraform init 
+  - Initialises terraform-related information
+  - .terraform is not committed to versison control as it contains some metadata of how terraform runs in backend
+
+terraform fmt
+  - runs terraform format command and cleans whitespaces 
+  - does not check or test your code
+
+terraform plan
+  - runs a plan based on main.tf
+  - basically it checks what you have defined
+
+terraform apply
+  - this will deploy your resources to defined provider
