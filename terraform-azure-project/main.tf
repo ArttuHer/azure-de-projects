@@ -122,4 +122,27 @@ resource "azurerm_linux_virtual_machine" "mtc-vm" {
     sku       = "22_04-lts"
     version   = "latest"
   }
+
+  provisioner "local-exec" {
+    command = templatefile("${var.host_os}-ssh-script.tpl", {
+      hostname     = self.public_ip_address,
+      user         = "adminuser",
+      identityfile = "~/.ssh/mtcazurekey"
+    })
+    interpreter = ["bash", "-c"]
+  }
+
+  tags = {
+    environment = "dev"
+  }
+}
+
+data "azurerm_public_ip" "mtc-ip-data" {
+  name                = azurerm_public_ip.mtc-ip.name
+  resource_group_name = azurerm_resource_group.mtc-rg.name
+}
+
+# With this, you can see what has changed, for example IP address
+output "public_ip_addr" {
+  value = "${azurerm_linux_virtual_machine.mtc-vm.name}: ${data.azurerm_public_ip.mtc-ip-data.ip_address}"
 }
