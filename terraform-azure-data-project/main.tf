@@ -19,6 +19,7 @@ variable "environment" {
   description = "Default value for target environment"
 }
 
+# to deploy prod, use terraform apply -var="environment=prod"
 resource "azurerm_resource_group" "tf-data-rg" {
   name     = "data-resources-${var.environment}"
   location = "Sweden Central"
