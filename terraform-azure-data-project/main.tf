@@ -4,6 +4,9 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "=3.0.0"
     }
+    databricks = {
+      source = "databricks/databricks"
+    }
   }
 }
 
@@ -11,16 +14,7 @@ provider "azurerm" {
   features {}
 }
 
-# with this definition, you can define default values
-# These default values will be overwriten if used additional variable file
-variable "environment" {
-  type        = string
-  default     = "dev"
-  description = "Default value for target environment"
-}
-
-# to deploy prod, use terraform apply -var="environment=prod"
-resource "azurerm_resource_group" "tf-data-rg" {
-  name     = "data-resources-${var.environment}"
-  location = "Sweden Central"
+module "azure" {
+  source = "./azure"
+  environment = var.environment
 }
