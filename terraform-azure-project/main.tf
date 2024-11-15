@@ -105,6 +105,7 @@ resource "azurerm_linux_virtual_machine" "mtc-vm" {
     azurerm_network_interface.mtc-nic.id,
   ]
 
+  custom_data = filebase64("customdata.tpl")
   admin_ssh_key {
     username   = "adminuser"
     public_key = file("~/.ssh/mtcazurekey.pub")
