@@ -55,12 +55,19 @@ address_space = ["10.123.0.0/16"]
   - Private key and public key
   - ssh-keygen creates new key under ~/.ssh
 
+## SSH extension
+  - Use this to add ssh keys to your specified files 
+  - You can also run linux or windows on your local computer in Vscode
+
+## Variable definition
+  - Variables can be defined dynamically in a separate variables file
+
 ## docker
   - Docker is used to automate deployment using containers
   - Containers bundle an application and all its depedencies into a single package
   - Docker engine: Runs and manages containers
   - Docker images: Read only that contain the application and its depedencies
-  
+
 
 continue from 58:00 https://youtu.be/V53AHWun17s
 
