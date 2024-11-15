@@ -4,3 +4,8 @@ terraform-azure-project/.terraform/
 terraform-azure-project/*.tfstate
 terraform-azure-project/crash.log
 terraform-azure-project/*.backup
+
+**/.terraform/
+**/*.tfstate
+**/crash.log
+**/*.backup
