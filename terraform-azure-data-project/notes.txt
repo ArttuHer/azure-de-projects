@@ -20,3 +20,7 @@ terraform-azure-data-project/
   │   ├── main.tf            # Resource groups 
   ├── databricks/            # Databricks resources
       ├── main.tf
+
+
+## Where to continue
+1. Link databricks to root main.tf and deploy to rg
