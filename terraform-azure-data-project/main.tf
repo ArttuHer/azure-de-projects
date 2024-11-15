@@ -14,7 +14,7 @@ provider "azurerm" {
 variable "environment" {
   type        = string
   default     = "dev"
-  description = "Specify the target environment"
+  description = "Default value for target environment"
 }
 
 resource "azurerm_resource_group" "tf-data-rg" {
