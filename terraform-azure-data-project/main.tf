@@ -11,6 +11,8 @@ provider "azurerm" {
   features {}
 }
 
+# with this definition, you can define default values
+# These default values will be overwriten if used additional variable file
 variable "environment" {
   type        = string
   default     = "dev"
