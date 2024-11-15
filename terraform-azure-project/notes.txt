@@ -55,7 +55,12 @@ address_space = ["10.123.0.0/16"]
   - Private key and public key
   - ssh-keygen creates new key under ~/.ssh
 
-
+## docker
+  - Docker is used to automate deployment using containers
+  - Containers bundle an application and all its depedencies into a single package
+  - Docker engine: Runs and manages containers
+  - Docker images: Read only that contain the application and its depedencies
+  
 
 continue from 58:00 https://youtu.be/V53AHWun17s
 
