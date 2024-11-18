@@ -4,11 +4,11 @@ variable "environment" {
 }
 
 resource "azurerm_resource_group" "tf-data-rg" {
-  name     = "data-resources-${var.environment}"
+  name     = "sms-resources-${var.environment}"
   location = "Sweden Central"
 
   tags = {
-    environment = "${var.environment}"
+    environment = "sms-${var.environment}"
   }
 }
 
@@ -29,15 +29,14 @@ variable "layers" {
 }
 
 resource "azurerm_storage_data_lake_gen2_filesystem" "az-dl2" {
-  for_each           = toset(var.layers)
-  name               = "${var.environment}-${each.value}"
+  name               = "${var.environment}-data"
   storage_account_id = azurerm_storage_account.tf-sa.id
 }
 
 resource "azurerm_storage_data_lake_gen2_path" "az-dl2-path" {
   for_each           = toset(var.layers)
   path               = "sms_${each.value}"
-  filesystem_name    = azurerm_storage_data_lake_gen2_filesystem.az-dl2[each.key].name
+  filesystem_name    = azurerm_storage_data_lake_gen2_filesystem.az-dl2.name
   storage_account_id = azurerm_storage_account.tf-sa.id
   resource           = "directory"
 }
