@@ -18,3 +18,10 @@ module "azure" {
   source      = "./azure"
   environment = var.environment
 }
+
+/* module "databricks" {
+  source              = "./databricks"
+  resource_group_name = module.azure.resource_group_name
+  location = module.azure.location
+  environment = var.environment
+} */
