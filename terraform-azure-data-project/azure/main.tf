@@ -50,7 +50,7 @@ resource "azurerm_storage_data_lake_gen2_path" "az-dl2-path" {
 }
 
 resource "azurerm_databricks_workspace" "databricks-ws" {
-  name                = "databricks-ws-${var.environment}"
+  name                = "${var.environment}-databricks-ws"
   location            = azurerm_resource_group.tf-data-rg.location
   resource_group_name = azurerm_resource_group.tf-data-rg.name
   sku                 = "standard"
