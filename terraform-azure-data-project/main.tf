@@ -15,6 +15,6 @@ provider "azurerm" {
 }
 
 module "azure" {
-  source = "./azure"
+  source      = "./azure"
   environment = var.environment
 }
