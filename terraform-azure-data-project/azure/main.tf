@@ -48,3 +48,14 @@ resource "azurerm_storage_data_lake_gen2_path" "az-dl2-path" {
   storage_account_id = azurerm_storage_account.tf-sa.id
   resource           = "directory"
 }
+
+resource "azurerm_databricks_workspace" "databricks-ws" {
+  name                = "databricks-ws-${var.environment}"
+  location            = azurerm_resource_group.tf-data-rg.location
+  resource_group_name = azurerm_resource_group.tf-data-rg.name
+  sku                 = "standard"
+
+  tags = {
+    environment = "${var.environment}"
+  }
+}
