@@ -21,6 +21,46 @@ terraform-azure-data-project/
   ├── databricks/            # Databricks resources
       ├── main.tf
 
+## modules
 
+- In the root, main.tf is called the root module
+- In turn, all other modules are called child modules which are called from the root module
+- After chaning modules, terraform init need to be run, as terraform can adjust the changes
+- root = where terraform is initialised and expected to find any configuration files
+
+
+## Storage account naming convention
+
+- One storage account per environment
+- One storage acccount per project per environment -> more granular
+
+## filesystem
+- File system is a logical container for your data
+- I managed to split containers based on layer and under each layer, there are project and layer specific folders
+
+## naming conventions
+
+- resource group per environment or per project? 
+  -> if there are many projects, more reasonable could be per project and environment
+- Storage account naming? 
+  -> [project][env][location][abbrevition for stroage account][index]
+  -> this is just one approach 
+- file system naming? 
+  -> This also depends on how previous layers are organised 
+  -> If storage account is only for one project, it is possible to do the following: 
+    <filesystem name>
+      bronze
+      silver
+      golder
+  -> But if there are many projects in the same SA, it could be
+    dev<layer>
+      <project><layer>
+
+
+## Naming in this example
+- One project per environment and resource group
+- One storage account 
+- file system: dev - data
+- paths: sms_bronze, sms_silver, sms_gold (<project>_<layer>)
 ## Where to continue
 1. Link databricks to root main.tf and deploy to rg
