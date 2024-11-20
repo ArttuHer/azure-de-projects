@@ -35,3 +35,10 @@ module "azure_data_lake_gen2" {
   environment        = var.environment
   storage_account_id = module.azure_storage_account.storage_account_id
 }
+
+module "databricks_workspace" {
+  source                  = "./modules/azure/databricksws"
+  environment             = var.environment
+  resource_group_name     = module.azure_resource_group.resource_group_name
+  resource_group_location = module.azure_resource_group.location
+}
