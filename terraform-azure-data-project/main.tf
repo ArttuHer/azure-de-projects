@@ -5,7 +5,8 @@ terraform {
       version = "=3.0.0"
     }
     databricks = {
-      source = "databricks/databricks"
+      source  = "databricks/databricks"
+      version = "1.58.0"
     }
   }
 }
@@ -14,14 +15,10 @@ provider "azurerm" {
   features {}
 }
 
+provider "databricks" {
+}
+
 module "azure" {
   source      = "./azure"
   environment = var.environment
 }
-
-/* module "databricks" {
-  source              = "./databricks"
-  resource_group_name = module.azure.resource_group_name
-  location = module.azure.location
-  environment = var.environment
-} */
