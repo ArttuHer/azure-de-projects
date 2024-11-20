@@ -19,6 +19,6 @@ provider "databricks" {
 }
 
 module "azure" {
-  source      = "./azure"
+  source      = "./modules/azure"
   environment = var.environment
 }
