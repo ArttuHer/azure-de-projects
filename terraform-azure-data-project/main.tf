@@ -18,7 +18,14 @@ provider "azurerm" {
 provider "databricks" {
 }
 
-module "azure" {
-  source      = "./modules/azure"
+module "azure_resource_group" {
+  source      = "./modules/azure/resourcegroup"
   environment = var.environment
+}
+
+module "azure_storage_account" {
+  source                  = "./modules/azure/storageaccount"
+  environment             = var.environment
+  resource_group_name     = module.azure_resource_group.resource_group_name
+  resource_group_location = module.azure_resource_group.location
 }
