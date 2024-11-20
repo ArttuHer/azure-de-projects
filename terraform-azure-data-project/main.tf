@@ -5,13 +5,17 @@ terraform {
       version = "=3.0.0"
     }
     databricks = {
-      source = "databricks/databricks"
+      source  = "databricks/databricks"
+      version = "1.58.0"
     }
   }
 }
 
 provider "azurerm" {
   features {}
+}
+
+provider "databricks" {
 }
 
 module "azure" {
