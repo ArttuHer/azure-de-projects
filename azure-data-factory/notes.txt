@@ -1,0 +1,7 @@
+### Purpose
+
+- Create Azure Data Factory service with Terraform // Done
+- Create a linked service to Data Factory // Continue from this!
+- Linked service should be Databricks
+- Create a simple notebook to Databricks
+- Orchestrate it from Data Factory
