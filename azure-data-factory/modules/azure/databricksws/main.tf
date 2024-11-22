@@ -23,3 +23,7 @@ resource "azurerm_databricks_workspace" "databricks-ws" {
     environment = "${var.environment}"
   }
 }
+
+output "workspace_url" {
+  value = azurerm_databricks_workspace.databricks-ws.workspace_url
+}
