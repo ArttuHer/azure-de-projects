@@ -27,3 +27,7 @@ resource "azurerm_databricks_workspace" "databricks-ws" {
 output "workspace_url" {
   value = azurerm_databricks_workspace.databricks-ws.workspace_url
 }
+
+output "workspace_id" {
+  value = azurerm_databricks_workspace.databricks-ws.id
+}
