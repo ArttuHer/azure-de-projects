@@ -31,5 +31,5 @@ module "databricks_workspace" {
 module "datafactory_linked_service" {
   source          = "./modules/azure/dflinkedservices"
   data_factory_id = module.azure_data_factory.data_factory_id
-  databricks_url  = module.databricks_workspace.workspace_url
+  workspace_url  = module.databricks_workspace.workspace_url
 }
