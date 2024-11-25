@@ -13,3 +13,17 @@
 3. Have a databricks workspace  / done 
 4. Use existing cluster or create new
 5. Link databricks and data factory from linked service
+
+
+
+### Data factory publishing
+- When data factory is not connected to any repo, it said to operate in Live mode
+- In this mode, publishing means saving
+
+
+### ADF Pipeline vs Data Flow
+- Pipelines are mainly primarily used for orchestration and scheduling
+- Orchestrate different set of actions
+- ADF data flows are designed for data transformation
+- They use spark clusters managed by ADF 
+- Data flow definitions are done in the UI, enabling low/no-code approach
