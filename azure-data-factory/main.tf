@@ -28,9 +28,9 @@ module "databricks_workspace" {
   resource_group_location = module.azure_resource_group.location
 }
 
-/* module "datafactory_linked_service" {
+module "datafactory_linked_service" {
   source          = "./modules/azure/dflinkedservices"
   data_factory_id = module.azure_data_factory.data_factory_id
   workspace_url   = module.databricks_workspace.workspace_url
   workspace_id    = module.databricks_workspace.workspace_id
-} */
+}
