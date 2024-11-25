@@ -2,6 +2,14 @@
 
 - Create Azure Data Factory service with Terraform // Done
 - Create a linked service to Data Factory // Continue from this!
+  - Was tricky with terraform, try in UI
 - Linked service should be Databricks
 - Create a simple notebook to Databricks
 - Orchestrate it from Data Factory
+
+### How to link ADF and Azure Databricks
+1. Have existing resource group / done 
+2. Have a data factory service / done 
+3. Have a databricks workspace  / done 
+4. Use existing cluster or create new
+5. Link databricks and data factory from linked service
