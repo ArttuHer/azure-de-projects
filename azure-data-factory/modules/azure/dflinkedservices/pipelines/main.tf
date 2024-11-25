@@ -4,13 +4,13 @@ variable "data_factory_id" {
 }
 
 resource "azurerm_data_factory_pipeline" "test" {
-  name            = "run-train-volume-transformations"
+  name            = "passenger-volume-analytics"
   data_factory_id = var.data_factory_id
 
   activities_json = <<JSON
 [
   {
-    "name": "run-notebook",
+    "name": "query-train-volume-data",
     "type": "DatabricksNotebook",
     "dependsOn": [],
     "policy": {
