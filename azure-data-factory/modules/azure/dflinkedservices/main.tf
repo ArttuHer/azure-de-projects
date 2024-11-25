@@ -22,3 +22,9 @@ resource "azurerm_data_factory_linked_service_azure_databricks" "databricks" {
   msi_work_space_resource_id = var.workspace_id
   adb_domain                 = "https://${var.workspace_url}"
 }
+
+
+module "databricks_notebook_task" {
+  source          = "./pipelines"
+  data_factory_id = var.data_factory_id
+}
