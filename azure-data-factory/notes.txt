@@ -27,3 +27,8 @@
 - ADF data flows are designed for data transformation
 - They use spark clusters managed by ADF 
 - Data flow definitions are done in the UI, enabling low/no-code approach
+
+
+### ADF Data flow
+- Data transformations without code -> resulting data flows are executed as activities within Azure Data Factory Pipelines
+- 
